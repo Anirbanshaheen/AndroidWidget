@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.androidwidgetapp.ads.AdActivity
+import com.example.androidwidgetapp.coroutineScope.CoroutineScopeActivity
 import com.example.androidwidgetapp.databinding.ActivityMainBinding
 import com.example.androidwidgetapp.googleBilling.GoogleBillingActivity
 import com.example.androidwidgetapp.interfaces.GenericInterfaceListener
@@ -37,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             "Ad",
             "Recycler View View Type",
             "Recycler View Sticky Header",
-            "Recycler View 6",
+            "Coroutine Scope",
             "Recycler View 7",
             "Recycler View 8",
             "Recycler View 9",
@@ -69,6 +70,7 @@ class MainActivity : AppCompatActivity() {
             "Ad" -> { startActivity(Intent(this@MainActivity, AdActivity::class.java)) }
             "Recycler View View Type" -> { startActivity(Intent(this@MainActivity, RVViewTypeActivity::class.java)) }
             "Recycler View Sticky Header" -> { startActivity(Intent(this@MainActivity, StickHeaderActivity::class.java)) }
+            "Coroutine Scope" -> { startActivity(Intent(this@MainActivity, CoroutineScopeActivity::class.java)) }
         }
     }
 }
