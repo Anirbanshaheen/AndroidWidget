@@ -13,6 +13,7 @@ import com.example.androidwidgetapp.interfaces.GenericInterfaceListener
 import com.example.androidwidgetapp.recyclerView.RecyclerViewActivity
 import com.example.androidwidgetapp.recyclerViewViewType.RVViewTypeActivity
 import com.example.androidwidgetapp.recyclerViewViewType.stickyHeaderType.StickHeaderActivity
+import com.example.androidwidgetapp.tabLayout.TabLayoutActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -39,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             "Recycler View View Type",
             "Recycler View Sticky Header",
             "Coroutine Scope",
-            "Recycler View 7",
+            "Tab layout",
             "Recycler View 8",
             "Recycler View 9",
             "Recycler View 10",
@@ -71,6 +72,7 @@ class MainActivity : AppCompatActivity() {
             "Recycler View View Type" -> { startActivity(Intent(this@MainActivity, RVViewTypeActivity::class.java)) }
             "Recycler View Sticky Header" -> { startActivity(Intent(this@MainActivity, StickHeaderActivity::class.java)) }
             "Coroutine Scope" -> { startActivity(Intent(this@MainActivity, CoroutineScopeActivity::class.java)) }
+            "Tab layout" -> { startActivity(Intent(this@MainActivity, TabLayoutActivity::class.java)) }
         }
     }
 }
