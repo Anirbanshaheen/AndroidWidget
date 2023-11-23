@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.androidwidgetapp.ads.AdActivity
+import com.example.androidwidgetapp.bottomSheetDialog.BottomSheetDialogActivity
 import com.example.androidwidgetapp.coroutineScope.CoroutineScopeActivity
 import com.example.androidwidgetapp.databinding.ActivityMainBinding
 import com.example.androidwidgetapp.googleBilling.GoogleBillingActivity
@@ -41,7 +42,7 @@ class MainActivity : AppCompatActivity() {
             "Recycler View Sticky Header",
             "Coroutine Scope",
             "Tab layout",
-            "Recycler View 8",
+            "Bottom Sheet Dialog",
             "Recycler View 9",
             "Recycler View 10",
             "Recycler View 11",
@@ -73,6 +74,7 @@ class MainActivity : AppCompatActivity() {
             "Recycler View Sticky Header" -> { startActivity(Intent(this@MainActivity, StickHeaderActivity::class.java)) }
             "Coroutine Scope" -> { startActivity(Intent(this@MainActivity, CoroutineScopeActivity::class.java)) }
             "Tab layout" -> { startActivity(Intent(this@MainActivity, TabLayoutActivity::class.java)) }
+            "Bottom Sheet Dialog" -> { startActivity(Intent(this@MainActivity, BottomSheetDialogActivity::class.java)) }
         }
     }
 }

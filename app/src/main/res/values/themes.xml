@@ -6,4 +6,13 @@
     </style>
 
     <style name="Theme.AndroidWidgetApp" parent="Base.Theme.AndroidWidgetApp" />
+
+    <style name="NoInternetBottomSheetFragment" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/noInternetBottomSheetStyleWrapper</item>
+    </style>
+
+    <style name="noInternetBottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
 </resources>
