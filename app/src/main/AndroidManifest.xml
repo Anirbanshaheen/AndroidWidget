@@ -17,6 +17,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".storyView.StoryActivity"
+            android:exported="false" />
+        <activity
             android:name=".bottomSheetDialog.BottomSheetDialogActivity"
             android:exported="false" />
         <activity

@@ -14,6 +14,7 @@ import com.example.androidwidgetapp.interfaces.GenericInterfaceListener
 import com.example.androidwidgetapp.recyclerView.RecyclerViewActivity
 import com.example.androidwidgetapp.recyclerViewViewType.RVViewTypeActivity
 import com.example.androidwidgetapp.recyclerViewViewType.stickyHeaderType.StickHeaderActivity
+import com.example.androidwidgetapp.storyView.StoryActivity
 import com.example.androidwidgetapp.tabLayout.TabLayoutActivity
 
 class MainActivity : AppCompatActivity() {
@@ -43,7 +44,7 @@ class MainActivity : AppCompatActivity() {
             "Coroutine Scope",
             "Tab layout",
             "Bottom Sheet Dialog",
-            "Recycler View 9",
+            "Story",
             "Recycler View 10",
             "Recycler View 11",
             "Recycler View 12",
@@ -75,6 +76,7 @@ class MainActivity : AppCompatActivity() {
             "Coroutine Scope" -> { startActivity(Intent(this@MainActivity, CoroutineScopeActivity::class.java)) }
             "Tab layout" -> { startActivity(Intent(this@MainActivity, TabLayoutActivity::class.java)) }
             "Bottom Sheet Dialog" -> { startActivity(Intent(this@MainActivity, BottomSheetDialogActivity::class.java)) }
+            "Story" -> { startActivity(Intent(this@MainActivity, StoryActivity::class.java)) }
         }
     }
 }
