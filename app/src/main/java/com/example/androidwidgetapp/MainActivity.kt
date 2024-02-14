@@ -12,6 +12,7 @@ import com.example.androidwidgetapp.databinding.ActivityMainBinding
 import com.example.androidwidgetapp.googleBilling.GoogleBillingActivity
 import com.example.androidwidgetapp.interfaces.GenericInterfaceListener
 import com.example.androidwidgetapp.recyclerView.RecyclerViewActivity
+import com.example.androidwidgetapp.recyclerViewDemo.RecyclerViewDemoActivity
 import com.example.androidwidgetapp.recyclerViewViewType.RVViewTypeActivity
 import com.example.androidwidgetapp.recyclerViewViewType.stickyHeaderType.StickHeaderActivity
 import com.example.androidwidgetapp.storyView.StoryActivity
@@ -45,7 +46,7 @@ class MainActivity : AppCompatActivity() {
             "Tab layout",
             "Bottom Sheet Dialog",
             "Story",
-            "Recycler View 10",
+            "Recycler View Demo",
             "Recycler View 11",
             "Recycler View 12",
             "Recycler View 13",
@@ -77,6 +78,7 @@ class MainActivity : AppCompatActivity() {
             "Tab layout" -> { startActivity(Intent(this@MainActivity, TabLayoutActivity::class.java)) }
             "Bottom Sheet Dialog" -> { startActivity(Intent(this@MainActivity, BottomSheetDialogActivity::class.java)) }
             "Story" -> { startActivity(Intent(this@MainActivity, StoryActivity::class.java)) }
+            "Recycler View Demo" -> { startActivity(Intent(this@MainActivity, RecyclerViewDemoActivity::class.java)) }
         }
     }
 }
