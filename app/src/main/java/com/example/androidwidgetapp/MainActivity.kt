@@ -44,8 +44,8 @@ class MainActivity : AppCompatActivity() {
             "Recycler View Sticky Header",
             "Coroutine Scope",
             "Tab layout",
-            "Bottom Sheet Dialog",
-            "Story",
+            "Dialogs",
+            "Facebook Story",
             "Recycler View Demo",
             "Recycler View 11",
             "Recycler View 12",
@@ -76,8 +76,8 @@ class MainActivity : AppCompatActivity() {
             "Recycler View Sticky Header" -> { startActivity(Intent(this@MainActivity, StickHeaderActivity::class.java)) }
             "Coroutine Scope" -> { startActivity(Intent(this@MainActivity, CoroutineScopeActivity::class.java)) }
             "Tab layout" -> { startActivity(Intent(this@MainActivity, TabLayoutActivity::class.java)) }
-            "Bottom Sheet Dialog" -> { startActivity(Intent(this@MainActivity, BottomSheetDialogActivity::class.java)) }
-            "Story" -> { startActivity(Intent(this@MainActivity, StoryActivity::class.java)) }
+            "Dialogs" -> { startActivity(Intent(this@MainActivity, BottomSheetDialogActivity::class.java)) }
+            "Facebook Story" -> { startActivity(Intent(this@MainActivity, StoryActivity::class.java)) }
             "Recycler View Demo" -> { startActivity(Intent(this@MainActivity, RecyclerViewDemoActivity::class.java)) }
         }
     }

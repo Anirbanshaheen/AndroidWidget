@@ -29,9 +29,18 @@
         android:id="@+id/alertDialogClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alert Dialog"
+        android:text="Material Alert Dialog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/bottomSheetClick" />
+
+    <Button
+        android:id="@+id/snackBarClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Snack Bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alertDialogClick" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

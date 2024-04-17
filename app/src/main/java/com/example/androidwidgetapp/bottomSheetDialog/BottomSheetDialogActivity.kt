@@ -1,7 +1,9 @@
 package com.example.androidwidgetapp.bottomSheetDialog
 
 import android.content.Context
+import android.content.DialogInterface
 import android.os.Bundle
+import android.util.Log
 import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
@@ -13,6 +15,8 @@ import com.example.androidwidgetapp.R
 import com.example.androidwidgetapp.databinding.ActivityBottomSheetDialogBinding
 import com.example.androidwidgetapp.interfaces.GenericInterfaceListener
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.android.material.snackbar.Snackbar
 
 class BottomSheetDialogActivity : AppCompatActivity() {
 
@@ -35,11 +39,29 @@ class BottomSheetDialogActivity : AppCompatActivity() {
         }
         binding.alertDialogClick.setOnClickListener {
             //showDialog(this,"Alert Dialog","This is a Alert Dialog with Two Buttons in Android")
+            //showAlertDialog(this)
+            MaterialAlertDialogBuilder(this).apply {
+                setTitle("Title")
+                setMessage("Message")
+                setPositiveButton("Ok"){ dialog, _ ->
+                    dialog.dismiss()
+                }
+                setNegativeButton("Cancel"){ dialog, _ ->
+                    dialog.dismiss()
+                }
+            }.create().show()
+        }
+        binding.snackBarClick.setOnClickListener {
+            Snackbar.make(binding.snackBarClick, "My Message", Snackbar.LENGTH_LONG)
+                .setAction("Ok") {
+                    Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show()
+                }
+                .show()
         }
     }
 
     private fun showAlertDialog(context: Context) {
-        val builder = AlertDialog.Builder(applicationContext)
+        val builder = AlertDialog.Builder(context)
         builder.setTitle(title)
         builder.setMessage("Hello")
 
